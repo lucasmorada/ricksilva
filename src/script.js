@@ -10,17 +10,17 @@ const portfolioItems = [
 ];
 
 const skills = [
-  { name: 'Videography', percentage: 95, icon: 'video' },
-  { name: 'Photography', percentage: 90, icon: 'camera' },
-  { name: 'Video Editing', percentage: 98, icon: 'film' },
-  { name: 'Color Grading', percentage: 92, icon: 'award' },
+  { name: 'Vídeos', percentage: 98, icon: 'video' },
+  { name: 'Fotos', percentage: 100, icon: 'camera' },
+  { name: 'Edição de Vídeos', percentage: 100, icon: 'film' },
+  { name: 'Color Grading', percentage: 93, icon: 'award' },
 ];
 
 const stats = [
-  { number: '500+', label: 'Projects Completed' },
-  { number: '10+', label: 'Years Experience' },
-  { number: '50+', label: 'Happy Clients' },
-  { number: '100+', label: 'Awards Won' },
+  { number: '100+', label: 'Projetos Entregues' },
+  { number: '10+', label: 'Anos de Experiência' },
+  { number: '50+', label: 'Clientes Satisfeitos' },
+  { number: '20+', label: 'Prêmios' },
 ];
 
 let currentActiveSection = 'home';
@@ -235,7 +235,7 @@ function initFormSubmission() {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Thank you for your message! I\'ll get back to you soon.');
+      alert('Agradeço pela Mensagem! Entrarei em contato em breve:)');
       form.reset();
     });
   }

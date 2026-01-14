@@ -267,13 +267,12 @@ body {
 }
 
 .hero-title {
-  font-size: 5.5rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  margin-bottom: 1rem;
-  overflow: hidden;
+  display: flex;
+  gap: 1rem; 
+  justify-content: center;
+  align-items: baseline;
 }
+
 
 @media (max-width: 768px) {
   .hero-title {
@@ -282,7 +281,7 @@ body {
 }
 
 .hero-title span {
-  display: block;
+  display: inline-block;
   opacity: 0;
   transform: translateY(100px);
   animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
