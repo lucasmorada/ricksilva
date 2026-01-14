@@ -288,6 +288,10 @@ body {
   animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+.hero-title .thin {
+  font-weight: 300; 
+}
+
 .hero-title .delay-1 {
   animation-delay: 0.2s;
 }
