@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick Silva - Visual Storyteller</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader-container">
+        <div class="loader-text">
+          <span>RICK SILVA</span>
+        </div>
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="navbar-content">
+        <div class="navbar-logo">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+            <path d="M16 3l-4 4-4-4"></path>
+          </svg>
+          <span>RICK SILVA</span>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <button class="nav-link" data-section="home">Home</button>
+          <button class="nav-link" data-section="portfolio">Portfolio</button>
+          <button class="nav-link" data-section="about">About</button>
+          <button class="nav-link" data-section="contact">Contact</button>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-gradient" id="hero-gradient"></div>
+      <div class="grid-pattern"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="slide-up">RICK</span>
+        </h1>
+        <h1 class="hero-title">
+          <span class="slide-up delay-1">SILVA</span>
+        </h1>
+        <div class="hero-subtitle slide-up delay-2">
+          <span>Videomaker</span>
+          <span class="dot"></span>
+          <span>Photographer</span>
+          <span class="dot"></span>
+          <span>Editor</span>
+        </div>
+        <button class="hero-btn slide-up delay-3" data-section="portfolio">View Work</button>
+      </div>
+      <div class="hero-scroll">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+      <div class="hero-gradient-right"></div>
+      <div class="hero-gradient-left"></div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio-container">
+        <div class="portfolio-header">
+          <h2>PORTFOLIO</h2>
+          <div class="portfolio-line"></div>
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Videos">Videos</button>
+          <button class="filter-btn" data-filter="Photography">Photography</button>
+          <button class="filter-btn" data-filter="Commercial">Commercial</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="about-left">
+          <h2>ABOUT<br>ME</h2>
+          <div class="about-line"></div>
+          <p>I'm Rick Silva, a visual storyteller with over a decade of experience crafting compelling narratives through the lens.</p>
+          <p>My passion lies in capturing moments that resonate, creating visual experiences that transcend the ordinary. Whether it's through dynamic videography, striking photography, or meticulous editing, I bring stories to life with precision and artistry.</p>
+          <p>Specializing in commercial, editorial, and documentary work, I've collaborated with brands and individuals worldwide to create content that not only looks stunning but also connects on a deeper level.</p>
+        </div>
+
+        <div class="about-right">
+          <div class="skills-list" id="skills-list"></div>
+        </div>
+      </div>
+
+      <div class="stats-grid" id="stats-grid"></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h2>LET'S WORK<br>TOGETHER</h2>
+          <div class="contact-line"></div>
+          <p>Have a project in mind? Let's create something extraordinary together. Whether it's a commercial shoot, editorial work, or a creative collaboration, I'm here to bring your vision to life.</p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">rick.silva@example.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <p class="social-label">Follow Me</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon" title="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-icon" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-icon" title="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2024 Rick Silva. All rights reserved.</p>
+      </div>
+    </section>
+
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>
