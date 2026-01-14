@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20 reveal-on-scroll">
           <h2 className="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">
-            LET'S WORK<br />TOGETHER
+            VAMOS TRABALHAR<br />JUNTOS
           </h2>
           <div className="w-24 h-1 bg-white mx-auto"></div>
         </div>
@@ -23,7 +23,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-3xl font-bold mb-4">Get in Touch</h3>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  Have a project in mind? Let's create something extraordinary together. Whether it's a commercial shoot, editorial work, or a creative collaboration, I'm here to bring your vision to life.
+                  Tem um projeto em mente? Vamos criar algo extraordinário juntos. Seja um ensaio comercial, um editorial ou uma colaboração criativa, estou pronto para transformar sua visão em algo real, marcante e memorável.
                 </p>
               </div>
 
@@ -40,7 +40,7 @@ export default function Contact() {
 
                 <div className="pt-8">
                   <p className="text-sm text-gray-400 uppercase tracking-wider mb-4">
-                    Follow Me
+                    Me siga por aqui :D
                   </p>
                   <div className="flex space-x-4">
                     {socialLinks.map((social) => (
@@ -63,7 +63,7 @@ export default function Contact() {
               <div className="relative">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Nome"
                   className="w-full bg-white/5 border border-gray-700 px-6 py-4 focus:outline-none focus:border-white transition-colors duration-300 text-white placeholder-gray-500"
                 />
               </div>
@@ -71,7 +71,7 @@ export default function Contact() {
               <div className="relative">
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   className="w-full bg-white/5 border border-gray-700 px-6 py-4 focus:outline-none focus:border-white transition-colors duration-300 text-white placeholder-gray-500"
                 />
               </div>
@@ -79,14 +79,14 @@ export default function Contact() {
               <div className="relative">
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder="Assunto"
                   className="w-full bg-white/5 border border-gray-700 px-6 py-4 focus:outline-none focus:border-white transition-colors duration-300 text-white placeholder-gray-500"
                 />
               </div>
 
               <div className="relative">
                 <textarea
-                  placeholder="Your Message"
+                  placeholder="Qual a boa?"
                   rows={6}
                   className="w-full bg-white/5 border border-gray-700 px-6 py-4 focus:outline-none focus:border-white transition-colors duration-300 text-white placeholder-gray-500 resize-none"
                 ></textarea>
@@ -97,7 +97,7 @@ export default function Contact() {
                 className="group relative w-full bg-white text-black py-4 px-8 font-bold uppercase tracking-widest text-sm overflow-hidden transition-all duration-500 hover:bg-gray-200"
               >
                 <span className="relative z-10 flex items-center justify-center space-x-2">
-                  <span>Send Message</span>
+                  <span>Encaminhar Mensagem</span>
                   <Send className="w-4 h-4" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-300 to-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
@@ -107,7 +107,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-32 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>&copy; 2024 Rick Silva. All rights reserved.</p>
+          <p>&copy; 2026 Rick Silva. Todos os direitos reservados.</p>
         </div>
       </div>
     </section>

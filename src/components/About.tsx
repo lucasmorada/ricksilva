@@ -32,13 +32,13 @@ export default function About() {
             <div className="w-24 h-1 bg-white mb-8"></div>
             <div className="space-y-6 text-gray-400 leading-relaxed">
               <p className="text-lg">
-                I'm Rick Silva, a visual storyteller with over a decade of experience crafting compelling narratives through the lens.
+                Sou Rick Silva, um contador de histórias visuais com mais de uma década de experiência transformando ideias em narrativas impactantes através das lentes.
               </p>
               <p className="text-lg">
-                My passion lies in capturing moments that resonate, creating visual experiences that transcend the ordinary. Whether it's through dynamic videography, striking photography, or meticulous editing, I bring stories to life with precision and artistry.
+                Minha paixão é capturar momentos que realmente dizem algo — criando experiências visuais que fogem do óbvio e ficam na memória. Seja por meio de videografia dinâmica, fotografia marcante ou uma edição minuciosa, dou vida às histórias com precisão, sensibilidade e estética.
               </p>
               <p className="text-lg">
-                Specializing in commercial, editorial, and documentary work, I've collaborated with brands and individuals worldwide to create content that not only looks stunning but also connects on a deeper level.
+                Especializado em projetos comerciais, editoriais e documentais, já colaborei com marcas e pessoas ao redor do mundo, criando conteúdos que não só impressionam visualmente, mas também se conectam de forma profunda e autêntica com o público.
               </p>
             </div>
           </div>

@@ -48,7 +48,7 @@ export default function Hero({ setActiveSection }: HeroProps) {
           <div className="flex items-center justify-center space-x-4 text-gray-400 uppercase tracking-[0.3em] text-sm md:text-base slide-up delay-2">
             <span>Videomaker</span>
             <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
-            <span>Photographer</span>
+            <span>Fotógrafo</span>
             <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
             <span>Editor</span>
           </div>
@@ -59,7 +59,7 @@ export default function Hero({ setActiveSection }: HeroProps) {
             onClick={scrollToPortfolio}
             className="slide-up delay-3 group relative px-8 py-4 bg-white text-black font-bold uppercase tracking-widest text-sm overflow-hidden transition-all duration-500 hover:bg-gray-200"
           >
-            <span className="relative z-10">View Work</span>
+            <span className="relative z-10">Ver Trabalho</span>
             <div className="absolute inset-0 bg-gradient-to-r from-gray-300 to-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
           </button>
         </div>
