@@ -283,6 +283,7 @@ body {
 
 .hero-title span {
   display: inline-block;
+  font-size: 7rem;
   opacity: 0;
   transform: translateY(100px);
   animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
