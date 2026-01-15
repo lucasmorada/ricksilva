@@ -240,3 +240,24 @@ function initFormSubmission() {
     });
   }
 }
+
+const island = document.getElementById("dynamic-island");
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 120) {
+    island.classList.add("show");
+    navbar.classList.add("hidden");
+  } else {
+    island.classList.remove("show");
+    navbar.classList.remove("hidden");
+  }
+});
+
+document.querySelectorAll("[data-section]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const section = document.getElementById(btn.dataset.section);
+    section.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
