@@ -1,3 +1,10 @@
+let pageReady = false;
+
+window.addEventListener("load", () => {
+  pageReady = true;
+});
+
+
 const portfolioItems = [
   { id: 1, type: 'video', category: 'Videos', title: 'Cinematic Showreel', image: 'https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=1200' },
   { id: 2, type: 'photo', category: 'Photography', title: 'Urban Portraits', image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1200' },
@@ -232,21 +239,22 @@ function initFormSubmission() {
   }
 }
 
-const island = document.getElementById("dynamic-island");
+const dynamicIsland = document.getElementById("dynamic-island");
 const navbar = document.getElementById("navbar");
 
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
+  if (!pageReady) return; // 🔒 trava tudo antes do load
+
   const currentScroll = window.scrollY;
 
   updateActiveNavLink();
 
   // Topo absoluto
   if (currentScroll <= 20) {
-    island.classList.remove("show");
-    navbar.classList.remove("hidden");
-    navbar.classList.remove("scrolled");
+    dynamicIsland.classList.remove("show");
+    navbar.classList.remove("hidden", "scrolled");
     lastScrollY = currentScroll;
     return;
   }
@@ -255,17 +263,19 @@ window.addEventListener("scroll", () => {
 
   // Descendo
   if (currentScroll > lastScrollY) {
-    island.classList.add("show");
+    dynamicIsland.classList.add("show");
     navbar.classList.add("hidden");
   } 
   // Subindo
   else {
-    island.classList.remove("show");
+    dynamicIsland.classList.remove("show");
     navbar.classList.remove("hidden");
   }
 
   lastScrollY = currentScroll;
 });
+
+
 
 document.querySelectorAll("[data-section]").forEach(btn => {
   btn.addEventListener("click", () => {
