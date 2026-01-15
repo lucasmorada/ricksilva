@@ -41,15 +41,6 @@ function initNavigation() {
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const navMenu = document.getElementById('nav-menu');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-
-    updateActiveNavLink();
-  });
 
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -249,19 +240,24 @@ let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
 
-  // Sempre navbar no topo
+  updateActiveNavLink();
+
+  // Topo absoluto
   if (currentScroll <= 20) {
     island.classList.remove("show");
     navbar.classList.remove("hidden");
+    navbar.classList.remove("scrolled");
     lastScrollY = currentScroll;
     return;
   }
+
+  navbar.classList.add("scrolled");
 
   // Descendo
   if (currentScroll > lastScrollY) {
     island.classList.add("show");
     navbar.classList.add("hidden");
-  }
+  } 
   // Subindo
   else {
     island.classList.remove("show");
@@ -270,7 +266,6 @@ window.addEventListener("scroll", () => {
 
   lastScrollY = currentScroll;
 });
-
 
 document.querySelectorAll("[data-section]").forEach(btn => {
   btn.addEventListener("click", () => {
