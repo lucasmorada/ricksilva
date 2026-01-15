@@ -244,15 +244,33 @@ function initFormSubmission() {
 const island = document.getElementById("dynamic-island");
 const navbar = document.getElementById("navbar");
 
+let lastScrollY = window.scrollY;
+
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 120) {
+  const currentScroll = window.scrollY;
+
+  // Sempre navbar no topo
+  if (currentScroll <= 20) {
+    island.classList.remove("show");
+    navbar.classList.remove("hidden");
+    lastScrollY = currentScroll;
+    return;
+  }
+
+  // Descendo
+  if (currentScroll > lastScrollY) {
     island.classList.add("show");
     navbar.classList.add("hidden");
-  } else {
+  }
+  // Subindo
+  else {
     island.classList.remove("show");
     navbar.classList.remove("hidden");
   }
+
+  lastScrollY = currentScroll;
 });
+
 
 document.querySelectorAll("[data-section]").forEach(btn => {
   btn.addEventListener("click", () => {
